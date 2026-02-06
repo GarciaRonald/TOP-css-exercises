@@ -21,11 +21,25 @@
 .header {
   background-color: #393f4d;
   grid-area: 1 / 1 / 2 / 3;
+  display: grid;
+  gap: 20%;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+}
+
+.menu li {
+  display: inline-block;
+  list-style-type: none;
 }
 
 .sidebar {
